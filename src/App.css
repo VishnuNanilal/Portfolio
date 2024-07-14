@@ -1,27 +1,47 @@
 *{
   margin: 0;
+  color: white;
 }
 
 header{
-  background-color: red;
-  height: 3rem;
+  padding:1rem 3rem;
+  min-height: 3rem;
+  display: flex;
+  justify-content: end;
+  gap: 5rem;
+  background-color: rgb(18, 22, 70);
+  border-bottom: 1px solid white;
+
+}
+
+main {
+  background-color: rgb(18, 22, 70);
 }
 
 .main-center{
   margin: 0 auto;
+  padding: 6rem 2rem;
   width: 90%;
   min-height: 100vh;
-  padding: 2rem;
-  border: 1px solid blue;
 }
 
 .profile{
-  width: 30rem;
+  width: 45rem;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
   border: 1px solid red;
 }
+
+.profile div{
+  margin-right: 2rem;
+  padding: 1rem;
+}
+
+.profile img {
+  max-height: 20rem;
+}
+
 
 .game-project-cont, .web-project-cont{
   padding: 2rem;

@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        header
+        <div>link 1</div>
+        <div>link 2</div>
+        <div>link 3</div>
+        <div>link 4</div>
       </header>
       <main>
         <div className='main-center'>
