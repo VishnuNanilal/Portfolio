@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 header{
   background-color: red;
   height: 3rem;
@@ -11,6 +15,19 @@ header{
   border: 1px solid blue;
 }
 
+.profile{
+  width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  border: 1px solid red;
+}
+
+.game-project-cont, .web-project-cont{
+  padding: 2rem;
+  border: 1px solid grey;
+}
+
 .project-card{
   width: 100%;
   padding: 1rem;
@@ -18,6 +35,8 @@ header{
   display: flex;
   justify-content: space-between;
   border: 1px solid green;
+
+  cursor:pointer;
 }
 
 .project-link-cont{
