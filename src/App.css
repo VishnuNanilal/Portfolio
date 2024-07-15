@@ -11,11 +11,19 @@
   font-style: normal;
 }
 
-.font-plex-sans-normal{
+.font-plex-sans{
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
+
+.font-plex-sans-bold{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
 
 :root{
   --light1: #e0fbfc; 
@@ -53,7 +61,7 @@ html{
 }
 
 .main-center{
-  margin: 0 auto;
+  margin: 0rem auto 2rem auto;
   padding: 6rem ;
   width: 85%;
   min-height: 100%;
@@ -69,6 +77,7 @@ html{
   
   border-radius: .5rem;
   background-color: var(--dark1);
+  overflow: hidden;
 }
 
 .profile div{
@@ -147,4 +156,9 @@ html{
 .project-items-cont{
   margin-bottom: 2rem;
   border-bottom: 2px solid var(--light2);
+}
+
+footer{
+  background-color: var(--dark2);
+  min-height: 5rem;
 }

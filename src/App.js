@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import {Link} from 'react-router-dom';
 import Profile from './components/Profile';
 import ProjectCard from './components/ProjectCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,15 +18,13 @@ function App() {
   return (
     <div className="App">
       <header>
-      <FontAwesomeIcon icon={faGithub} />
-        <div>link 2</div>
-        <div>link 3</div>
-        <div>link 4</div>
+      <Link to={"https://github.com/VishnuNanilal?tab=repositories"} style={{color: "var(--light2)"}}><FontAwesomeIcon icon={faGithub} /></Link>
+      <Link to={"https://github.com/VishnuNanilal?tab=repositories"} style={{color: "var(--light2)", textDecoration:"none"}}>LinkedIn</Link>
+      <Link to={"https://leetcode.com/u/vishnunlal/"} style={{color: "var(--light2)", textDecoration:"none"}}>LeetCode</Link>
       </header>
       <main>
         <div className='main-center'>
           <Profile />
-
           <button className='contact-me-btn'>Contact Me</button>
 
           <section className='project-cont'>
@@ -71,7 +70,6 @@ function App() {
         </div>
       </main>
       <footer>
-        footer
       </footer>
     </div>
   );
