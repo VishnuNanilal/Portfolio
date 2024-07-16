@@ -91,13 +91,15 @@ html{
 
 
 .game-project-cont, .web-project-cont{
-  margin: 1rem 0rem;
+  margin: 1rem auto;
   padding: .5rem 2rem;
   background-color: var(--dark2);
   border-radius: .5rem;
 
   position: relative;
   cursor: pointer;
+
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .project-cont{
@@ -106,9 +108,9 @@ html{
 }
 
 .project-card{
-  width: 100%;
+  width: 90%;
   padding: 0rem 1.5rem;
-  margin: .75rem 0;
+  margin: .75rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,8 +144,20 @@ html{
   cursor: pointer;
 }
 
-.nav-link:hover{
+.nav-link::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  border-radius: 1px;
+  background-color: var(--light2);
   text-decoration: underline;
+  transform-origin: 50%;
+  transition: .15s ease-out;
+}
+
+.nav-link:hover::after{
+  width: 100%;
 }
 
 .project-header-div{
