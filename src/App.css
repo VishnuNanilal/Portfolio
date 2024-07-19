@@ -76,7 +76,7 @@ html{
   display: flex;
   
   border-radius: .5rem;
-  background-color: var(--dark1);
+  background: linear-gradient(var(--dark1), var(--dark2));
   overflow: hidden;
 }
 
