@@ -11,10 +11,6 @@ function App() {
   const [showWebProjects, setShowWebProjects] = useState(false)
   const [showGameProjects, setShowGameProjects] = useState(false)
 
-  function handleClick() {
-    setShowGameProjects(prev => !prev)
-  }
-
   return (
     <div className="App">
       <header>
@@ -36,7 +32,25 @@ function App() {
           <section className='project-cont'>
             <h2>Projects</h2>
 
-            <div className='game-project-cont' onClick={() => handleClick()}>
+            <div className='web-project-cont' onClick={() => setShowWebProjects(prev => !prev)}>
+              <div className='project-header-div'>
+                <h4>
+                  Web Dev Projects
+                </h4>
+                <FontAwesomeIcon icon={showWebProjects ? faCaretUp : faCaretDown} />
+              </div>
+              {
+                showWebProjects
+                &&
+                <div className='project-items-cont'>
+                  <ProjectCard name='Real Estate' demoLink='https://real-estate-project-w4pv.onrender.com/' codeLink='https://github.com/VishnuNanilal/real-estate-project' />
+                  <ProjectCard name='Book My Show' demoLink='https://book-my-show-5bks.onrender.com/sign-in' codeLink='https://github.com/VishnuNanilal/book-my-show' />
+                  <ProjectCard name='Greedy Game' demoLink='https://greedy-game-8aao.onrender.com' codeLink='https://github.com/VishnuNanilal/book-my-show' />
+                </div>
+              }
+            </div>
+
+            <div className='game-project-cont' onClick={() => setShowGameProjects(prev => !prev)}>
               <div className='project-header-div'>
                 <h4>
                   Game Dev Projects
@@ -53,21 +67,7 @@ function App() {
                   <ProjectCard name='Chess' demoLink='https://669671d247c83b94e660bcef--idyllic-kitsune-998576.netlify.app/' codeLink='https://github.com/VishnuNanilal/Game-Chess' />
                   <ProjectCard name='Area Calculation' demoLink='https://66966d03d13a7ca190672b46--cheerful-monstera-77e70c.netlify.app/' codeLink='https://github.com/VishnuNanilal/Area-Calculator' />
                   <ProjectCard name='Factory Sorting' demoLink='https://66967b7cd560b1a13f166c0b--lustrous-pithivier-2b9b4a.netlify.app/' codeLink='https://github.com/VishnuNanilal/Factory-settings' />
-                </div>
-              }
-            </div>
-
-            <div className='web-project-cont' onClick={() => setShowWebProjects(prev => !prev)}>
-              <h4>
-                Web Dev Projects
-              </h4>
-              {
-                showWebProjects
-                &&
-                <div>
-                  <ProjectCard />
-                  <ProjectCard />
-                  <ProjectCard />
+                  <ProjectCard name='RPG' demoLink='' codeLink='https://github.com/VishnuNanilal/Game-RPG' />
                 </div>
               }
             </div>
