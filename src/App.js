@@ -66,7 +66,7 @@ function App() {
               </div>
               {
                 <div className='project-items-cont'>
-                  <ProjectCard name='Real Estate' demoLink='https://real-estate-project-w4pv.onrender.com/' codeLink='https://github.com/VishnuNanilal/real-estate-project' />
+                  <ProjectCard name='Real Estate' demoLink='https://real-estate-project-op7o.onrender.com/' codeLink='https://github.com/VishnuNanilal/real-estate-project' />
                   <ProjectCard name='Book My Show' demoLink='https://book-my-show-5bks.onrender.com/sign-in' codeLink='https://github.com/VishnuNanilal/book-my-show' />
                   <ProjectCard name='Greedy Game' demoLink='https://greedy-game-8aao.onrender.com' codeLink='https://github.com/VishnuNanilal/book-my-show' />
                 </div>
